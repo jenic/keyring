@@ -26,9 +26,9 @@ jobs:
       - run: sudo apt-get update
       - run: sudo apt-get install pass gnome-keyring dbus-x11 age
       - run: |
-        git clone https://github.com/FiloSottile/passage /tmp/passage
-        cd /tmp/passage
-        sudo make install
+          git clone https://github.com/FiloSottile/passage /tmp/passage
+          cd /tmp/passage
+          sudo make install
 
       - run: go test -race ./...
   mac:
